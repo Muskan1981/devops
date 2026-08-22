@@ -2,9 +2,9 @@ name: event filters and activity types
 
 on: 
   pull_request:
-    types: opened
-  branches:
-    - main
+    types: [opened , reopened , closed]
+    branches:
+      - main
 
 jobs:
     echo:
