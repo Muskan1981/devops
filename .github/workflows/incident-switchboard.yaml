@@ -111,14 +111,14 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: app/package-lock.json
+          cache-dependency-path: react-app/package-lock.json
 
       - name: Install dependencies
-        working-directory: app
+        working-directory: react-app
         run: npm ci
 
       - name: Run tests
-        working-directory: app
+        working-directory: react-app
         run: npm test
 
 
