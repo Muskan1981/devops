@@ -1,6 +1,6 @@
 name: Using Expressions
 run-name: Using Expressions | DEBUG - ${{ inputs.debug && 'ON' || 'OFF' }}
-
+# DEBUG - ON || DEBUG - OFF this will be displayed which shows that at the time of run the debug was on or off.
 on:
   workflow_dispatch:
     inputs:
